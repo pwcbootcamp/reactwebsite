@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="alt-header">PWC Training School Registration Form</h1>
+        <form action="" method="post" class="form">
+            <!-- For first name -->
+            <div class="form_group">
+                <label for="first_name" class="form-grp-label"> First Name </label>
+                <input placeholder="First Name" id="first_name" class="first_name" type="text" name="first_name" required/>
+            </div>
+            <!-- For middle name -->
+            <div class="form_group">
+                <label for="middle_name" class="form-grp-label"> Middle Name </label>
+                <input placeholder="Middle Name" id="first_name" class="middle_name" type="text" name="middle_name" required/>
+            </div> 
+            <!-- For last name -->
+            <div class="form_group">
+                <label for="last_name" class="form-grp-label"> Last Name </label>
+                <input placeholder="Last Name" id="last_name" class="last_name" type="text" name="last_name" required>
+            </div>
+            <!-- For email -->
+            <div class="form_group">
+                <label for="email" class="form-grp-label"> Email Address </label>
+                <input placeholder="Email Address" id="email" class="email" type="email" name="email" required>
+            </div>
+            <!-- For Phone Number -->
+            <div class="form_group">
+                <label for="phone_number" class="form-grp-label"> Phone Number </label>
+                <input placeholder="Phone Number" id="phone_number" class="phone_number" type="tel" name="phone_number" required>
+            </div>
+            <!-- For gender-->
+            <div class="form_group">
+                <label for="gender" class="form-grp-label"> Gender </label>
+                <select required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <!-- For State -->
+            <div class="form_group">
+                <label for="state" class="form-grp-label"> State </label>
+                <select required>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Kastina">Kastina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                </select>
+            </div>
+            <!-- for button-->
+            <div class="form_group">
+                <button class="btn-submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
