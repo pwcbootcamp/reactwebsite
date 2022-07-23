@@ -1,6 +1,26 @@
 # pwc-group-assignment
 
-### Header content to add to each page - code to be added immediately after the opening body tag
+### Code to be added to the Head tag of your page
+```HTML
+<link rel="stylesheet" href="indexstyle.css">
+<!-- font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+```
+### The head tag after this code has been added should look like this
+```HTML
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interactive website</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+</head>
+```
+    
+### Header content to add to each html page - code to be added immediately after the opening body tag
 ```HTML
 <header>
       <nav class="navbar">
@@ -33,7 +53,7 @@
     </header>
 ```
 
-### Footer content to add to each page - code to be added immediately before the closing body tag
+### Footer content to add to each html page - code to be added immediately before the closing body tag
 ```HTML
     <footer>
       <div class="footer">
@@ -79,3 +99,5 @@
       </div>
     </footer>
 ```
+
+>>>Reference the index.html file if you need further clarification on how to place this code in your html page
