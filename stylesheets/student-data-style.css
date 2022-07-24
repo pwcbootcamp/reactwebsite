@@ -30,7 +30,7 @@ html {
   width: 100%;
   position: fixed;
   /* background: #333; */
-  padding: 0px 10px 0;
+  /* padding: 0px 10px 0; */
   color: #fff;
   /* padding: 10px 16px; */
   /* background: #555; */
@@ -43,7 +43,7 @@ body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   padding-top: 60px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 .heading {
   text-align: center;
@@ -76,7 +76,7 @@ td {
 }
 
 tr:nth-child(even) td {
-  background-color: rgb(17, 88, 15);
+  background-color: rgb(90, 79, 18);
   color: rgb(190, 190, 190);
 }
 
