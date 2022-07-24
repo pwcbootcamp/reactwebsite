@@ -2,7 +2,7 @@
 
 ### Code to be added to the Head tag of your page
 ```HTML
-<link rel="stylesheet" href="indexstyle.css">
+<link rel="stylesheet" href="./stylesheets/indexstyle.css">
 <!-- font awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 ```
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Interactive website</title>
-    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="./stylesheets/indexstyle.css">
     <!-- font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 </head>
@@ -22,9 +22,9 @@
     
 ### Header content to add to each html page - code to be added immediately after the opening body tag
 ```HTML
-<header>
+ <header class="header">
       <nav class="navbar">
-          <img src="./PwC-logo.svg">
+          <img src="./assets/PwC-logo.svg">
           <h2>Student Website</h2>
   
         <div>
@@ -33,10 +33,10 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="contactus.html">Contact Us</a>
+            <a href="contact-us.html">Contact Us</a>
           </li>
           <li>
-            <a href="gallary.html">Gallery</a>
+            <a href="gallery.html">Gallery</a>
           </li>
           <li>
             <a href="applicationform.html">Application Form</a>
@@ -88,7 +88,7 @@
 
       <div style="width: 100%;border: 1px solid #fff;margin: 20px 0;"></div>
       <div>
-        <img src="./PwC-logo.svg" height="70px" width="70px" >
+        <img src="./assets//PwC-logo.svg" height="70px" width="70px" >
         <span>
           <p style="color: #fff; font-size: 20px;display: inline-block;">Contact us:</p>
            <a href=""><i class="fab fa-facebook" aria-hidden="true" style="color: #fff;"></i></a>
@@ -100,4 +100,4 @@
     </footer>
 ```
 
->>>Reference the index.html file if you need further clarification on how to place this code in your html page
+>Reference the index.html file if you need further clarification on how to place this code in your html page
