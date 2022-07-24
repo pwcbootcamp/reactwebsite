@@ -76,7 +76,8 @@ td {
 }
 
 tr:nth-child(even) td {
-  background-color: rgb(90, 79, 18);
+  background-color: rgb(132, 102, 62);
+  /* background-color: rgb(90, 79, 18); */
   color: rgb(190, 190, 190);
 }
 

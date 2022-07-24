@@ -11,6 +11,7 @@
     overflow: hidden;
   }
  
+
   .grid-item img{
     border: 1px solid black;
     object-fit: contain;

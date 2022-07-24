@@ -5,53 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form</title>
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./stylesheets/header-footer-style.css">
+    <link rel="stylesheet" href="/stylesheets/applicationform.css">
 </head>
 <body>
-    <main class="container">
-        <h1 class="alt-header">PWC Training School Registration Form</h1>
-        <form action="" method="post" class="form">
-            <!-- For first name -->
-            <div class="form_group">
-                <label for="first_name" class="form-grp-label"> First Name </label>
-                <input placeholder="First Name" id="first_name" class="first_name" type="text" name="first_name" required/>
-            </div>
-            <!-- For middle name -->
-            <div class="form_group">
-                <label for="middle_name" class="form-grp-label"> Middle Name </label>
-                <input placeholder="Middle Name" id="first_name" class="middle_name" type="text" name="middle_name" required/>
-            </div> 
-            <!-- For last name -->
-            <div class="form_group">
-                <label for="last_name" class="form-grp-label"> Last Name </label>
-                <input placeholder="Last Name" id="last_name" class="last_name" type="text" name="last_name" required>
-            </div>
-            <!-- For email -->
-            <div class="form_group">
-                <label for="email" class="form-grp-label"> Email Address </label>
-                <input placeholder="Email Address" id="email" class="email" type="email" name="email" required>
-            </div>
-            <!-- For Phone Number -->
-            <div class="form_group">
-                <label for="phone_number" class="form-grp-label"> Phone Number </label>
-                <input placeholder="Phone Number" id="phone_number" class="phone_number" type="tel" name="phone_number" required>
-            </div>
-            <!-- For gender-->
-            <div class="form_group">
-                <label for="gender" class="form-grp-label"> Gender </label>
-                <select required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="neutral">Neutral</option>
-                    <option value="others">Others</option>
-                </select>
-            </div>
-            <!-- For State -->
-            <div class="form_group">
-                <label for="state" class="form-grp-label"> State </label>
-                <select required>
-                    <option value="Abia">Abia</option>
+<!-- <body style="background-image: url('./assets/pwc.jpg'); background-repeat: no-repeat; background-size:cover;" > -->
+
+    <header class="header">
+        <nav class="navbar">
+            <img src="./assets/PwC-logo.svg">
+            <h2>Student Website</h2>
+    
+          <div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="aboutus.html">About Us</a>
+              </li>
+              <li>
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="application-form.html">Application Form</a>
+              </li>
+              <li>
+                <a href="students-data.html">Student Data</a>
+              </li>
+            </ul>
+        </div>
+        </nav>
+      </header>
+
+
+      <section class="container" >
+      <form id="form">
+        
+        <div>
+        <h3>Application Form</h3>
+        <div>
+        <label>FirstName:</label>
+        <input type="text" placeholder="firstname" id="firstname">
+        </div>
+        
+        <div>
+        <label>SecondName:</label>
+        <input type="text" placeholder="secondname" id="secondname">
+        </div>
+
+        <div>
+        <label>Age:</label>
+        <input type="number" placeholder="age" class="age">
+        </div>
+
+        <div>
+        <label>Gender:</label>
+        <input type="radio"> <a>female</a> 
+        <input type="radio"> <a>male</a>
+        </div>
+
+        <div>
+        <label>State:</label>
+        <select state="state" id="state">
+            <option value="Abia">Abia</option>
                     <option value="Adamawa">Adamawa</option>
                     <option value="Akwa Ibom">Akwa Ibom</option>
                     <option value="Anambra">Anambra</option>
@@ -87,14 +107,75 @@
                     <option value="Taraba">Taraba</option>
                     <option value="Yobe">Yobe</option>
                     <option value="Zamfara">Zamfara</option>
-                </select>
-            </div>
-            <!-- for button-->
-            <div class="form_group">
-                <button class="btn-submit">Submit</button>
-            </div>
+        </select>
+        </div>
 
-        </form>
-    </main>
+        <div class="courses">
+        <label>Selected Courses:</label>
+        <input type="checkbox" id="courses" value="DataScience"><a>DataScience</a><br>
+        <input type="checkbox" id="courses" value="FullStack"><a>FullStack</a><br>
+        <input type="checkbox" id="courses"><a>Agile</a><br>
+        <input type="checkbox" id="courses"><a>Internet Of Things</a><br>
+        <input type="checkbox" id="courses"><a>Artificial Intelligence</a>
+        </div>
+        </div>
+        
+        <!-- <input class="btn" type="submit" value="Submit"> -->
+        <button class="btn" type="submit" >Submit</button>
+    </form>
+
+    <div class="msg"></div>
+    <ul id="users"></ul>
+
+</section>
+
+<footer>
+    <div class="footer">
+
+      <ul>
+      <li><b>Services</b></li>
+      <li> Audit and assurance services</li>
+      <li>Advisory Services</li>
+      <li>Private wealth services</li>
+      <li>SME Desk</li>
+      <li>Tax services </li>
+      </ul>
+
+      <ul>
+        <li><b>Insights</b></li>
+        <li> Insights and publications</li>
+        <li>Press Room</li>
+        <li>Subscriptions</li>
+        <li>SME Desk</li>
+        <li>Tax services </li>
+      </ul>
+
+      <ul>
+        <li><b>Career</b></li>
+        <li> Insights and publications</li>
+        <li>Press Room</li>
+        <li>Subscriptions</li>
+        <li>SME Desk</li>
+        <li>Tax services </li>
+      </ul>       
+    </div>
+
+    <div style="width: 100%;border: 1px solid #fff;margin: 20px 0;"></div>
+    <div>
+      <img src="./assets//PwC-logo.svg" height="70px" width="70px" >
+      <span>
+        <p style="color: #fff; font-size: 20px;display: inline-block;">Contact us:</p>
+         <a href=""><i class="fab fa-facebook" aria-hidden="true" style="color: #fff;"></i></a>
+         <a href=""><i class="fab fa-twitter" aria-hidden="true" style="color: #fff;"></i></a>
+         <a href=""><i class="fab fa-github" aria-hidden="true" style="color: #fff;"></i></a>
+         <a href=""><i class="fab fa-linkedin" aria-hidden="true" style="color: #fff;"></i></a>      
+      </span>
+    </div>
+  </footer>
+
+<script src="applicationmain.js"></script>
+    
 </body>
+
+
 </html>
