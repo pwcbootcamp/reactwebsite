@@ -1,0 +1,18 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  background-color: #cecece;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  margin: 50px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #333;
+}
+
+.card p {
+  font-size: 14px;
+}
