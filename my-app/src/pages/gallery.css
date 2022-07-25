@@ -1,0 +1,29 @@
+main{
+    padding: 20px;
+  }
+  h3{
+    margin-top:20px;
+  }
+  nav ul {
+      display: flex;
+  }
+  .content{
+    margin: 20px auto;
+    width: 90%;
+  }
+  .content-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  
+  }
+  
+  .content-item {
+    /* border: 1px solid red; */
+    width: 400px;
+  }
+  
+  .content-item img {
+    width: 100%;
+  }
+  
