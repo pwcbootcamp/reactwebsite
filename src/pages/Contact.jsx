@@ -41,13 +41,13 @@ const Contact = () => {
 
       <div class="form-containers">
         <form id="my-form">
-          <label>First name</label>
+          <label>First name:</label>
           <input type="text" id="name" />
-          <label>Email</label>
+          <label>Email:</label>
           <input type="text" id="email" />
-          <label>Phone Number</label>
+          <label>Phone Number:</label>
           <input type="text" id="number" />
-          <label for="questions">Questions/Comments</label>
+          <label for="questions">Questions/Comments:</label>
           <textarea
             name="message"
             rows="10"
