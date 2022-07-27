@@ -1,0 +1,47 @@
+/* .card-wrapper {
+  display: flex;
+  flex-direction: row;
+} */
+.card {
+  background-color: #cecece;
+  padding: 20px;
+  /* width: 250px; */
+  /* height: 250px; */
+  text-align: left;
+  margin: 25px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #333;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.body {
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 1240px;
+}
+
+.blog-btn {
+  padding: 10px 30px;
+  margin: 10px 0;
+  border-color: #333;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+}
