@@ -1,0 +1,32 @@
+#formWrapper {
+  margin: auto;
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
+
+#myForm {
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+#myForm label {
+  display: block;
+  text-align: left;
+}
+
+#myForm input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#age {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
