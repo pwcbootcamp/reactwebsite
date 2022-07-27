@@ -1,32 +1,25 @@
-import React from 'react'
+import React from "react";
 
-const Home = () => {
-    return (
-        <div>
-            <section className="container">
-                <form id="my-form">
-                    <h1>Add User</h1>
-                    <div className="msg"></div>
-                    <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" />
-                    </div>
-                    <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="text" id="email" />
-                    </div>
-                    <input className="btn" type="submit" value="Submit" />
-                </form>
-
-                <ul id="users"></ul>
-                {/* <!-- <ul className="items">
-                <li className="item">Item 1</li>
-                <li className="item">Item 2</li>
-                <li className="item">Item 3</li>
-                </ul> --> */}
-            </section>
-        </div>
-    )
+function Home() {
+  return (
+    <section>
+      <div class="Hero">
+        <h2>PWC Auditing Firm</h2>
+        <p>
+          This is my first website created in PWC learning Software developer
+        </p>
+      </div>
+      <div class="services">
+        <h3>Services Offered By PWC</h3>
+        <ul>
+          <li>Corporate Auditing</li>
+          <li>Auditing Software Solutions</li>
+          <li>Project Management</li>
+          <li>Software Training</li>
+        </ul>
+      </div>
+    </section>
+  );
 }
 
-export default Home
+export default Home;

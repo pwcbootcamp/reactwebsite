@@ -1,51 +1,40 @@
-// import React from 'react';
-// import { useState } from 'react';
-// import { ReactDOM } from 'react-dom/client';
+import React, { useState } from 'react'
 
+function RecruitmentForm() {
+    const [name, setName] = useState("");
+    const [age, setAge] = useState("");
 
-// function RecruitmentForm () {
-    
-//     const [inputs, setInputs] = useState({});
+const handleSubmit = (e) => {
+    e.preventDefault()
 
-//     const handleChange = (event) => {
-//         const name = event.target.name;
-//         const value = event.target.value;
-//         setInputs(values => ({...values, [name]: value}))
-//     }
-            
-//     const handleSubmit = (event) => {
-//         event.preventDefault();
-//         alert(inputs);
-//     }
-                
-//     return (
-//         <section>
-//             <form onSubmit={handleSubmit}>
-//                 <label>Enter your name:
-//                 <input 
-//                     type="text" 
-//                     name="username" 
-//                     value={inputs.username || ""} 
-//                     onChange={handleChange}
-//                 />
-//                 </label>
-//                 <label>Enter your age:
-//                 <input 
-//                     type="number" 
-//                     name="age" 
-//                     value={inputs.age || ""} 
-//                     onChange={handleChange}
-//                 />
-//                 </label>
-//                 <input type="submit" />
-//             </form>
+    alert('my name is ' + name + ' and age is ' + age)  //
 
-//         </section>
-                
-//     )
-// }
+}
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<MyForm />);
+  return (
+    <section className="container">
+            <form action="container" onSubmit={handleSubmit}>
+                <div>
 
-// export default RecruitmentForm;
+                <label htmlFor="name">Name</label>
+                <input type="text"  
+                value={name} 
+                onChange={(e) => setName(e.target.value)}
+                />
+                </div>
+
+                <div>
+                 <label htmlFor="Age">Age</label>
+                <input type="text"  
+                value={age} 
+                onChange={(e) => setAge(e.target.value)}
+                />
+
+                </div>
+                <button type='submit'> Submit application</button>
+            </form>
+    </section>
+  )
+}
+
+export default RecruitmentForm;
