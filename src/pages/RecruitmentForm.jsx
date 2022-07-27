@@ -1,51 +1,51 @@
-import React from 'react';
-import { useState } from 'react';
-import { ReactDOM } from 'react-dom/client';
+// import React from 'react';
+// import { useState } from 'react';
+// import { ReactDOM } from 'react-dom/client';
 
 
-function RecruitmentForm () {
+// function RecruitmentForm () {
     
-    const [inputs, setInputs] = useState({});
+//     const [inputs, setInputs] = useState({});
 
-    const handleChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}))
-    }
+//     const handleChange = (event) => {
+//         const name = event.target.name;
+//         const value = event.target.value;
+//         setInputs(values => ({...values, [name]: value}))
+//     }
             
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        alert(inputs);
-    }
+//     const handleSubmit = (event) => {
+//         event.preventDefault();
+//         alert(inputs);
+//     }
                 
-    return (
-        <section>
-            <form onSubmit={handleSubmit}>
-                <label>Enter your name:
-                <input 
-                    type="text" 
-                    name="username" 
-                    value={inputs.username || ""} 
-                    onChange={handleChange}
-                />
-                </label>
-                <label>Enter your age:
-                <input 
-                    type="number" 
-                    name="age" 
-                    value={inputs.age || ""} 
-                    onChange={handleChange}
-                />
-                </label>
-                <input type="submit" />
-            </form>
+//     return (
+//         <section>
+//             <form onSubmit={handleSubmit}>
+//                 <label>Enter your name:
+//                 <input 
+//                     type="text" 
+//                     name="username" 
+//                     value={inputs.username || ""} 
+//                     onChange={handleChange}
+//                 />
+//                 </label>
+//                 <label>Enter your age:
+//                 <input 
+//                     type="number" 
+//                     name="age" 
+//                     value={inputs.age || ""} 
+//                     onChange={handleChange}
+//                 />
+//                 </label>
+//                 <input type="submit" />
+//             </form>
 
-        </section>
+//         </section>
                 
-    )
-}
+//     )
+// }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MyForm />);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<MyForm />);
 
-export default RecruitmentForm;
+// export default RecruitmentForm;

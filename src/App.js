@@ -1,13 +1,16 @@
 import './App.css';
-import Counter from './components/Counter';
-import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Counter from './components/Counter';
+import Header from './components/Header';
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
-import ApplicationForm from './pages/ApplicationForm';
+import Gallery from './pages/Gallery';
 import StudentData from './pages/StudentData';
+import ApplicationForm from './pages/ApplicationForm';
+import RecruitmentForm from './pages/RecruitmentForm';
+import Posts from './pages/Posts';
 
 
 function App() {
@@ -22,8 +25,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/ContactUs" element = {<ContactUs />} />
             <Route path="/AboutUs" element = {<AboutUs />} />
-            <Route path="/ApplicationForm" element={<ApplicationForm />} />
+            <Route path="/Gallery" element = {<Gallery />} />
             <Route path="/StudentData" element={<StudentData />} />
+            <Route path="/ApplicationForm" element={<ApplicationForm />} />
+            <Route path="/RecruitmentForm" element={<RecruitmentForm />} />
+            <Route path="/Posts" element={<Posts />} />
           </Routes>
           
         <Counter />
