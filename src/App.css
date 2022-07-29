@@ -75,6 +75,10 @@ header {
   padding: 2rem;
   background: #f4f4f4;
 }
+#my-form form {
+  color: white;
+}
+
 #my-form label {
   display: block;
 }
@@ -207,4 +211,11 @@ select {
   to {
     transform: rotate(360deg);
   }
+}
+
+.card_posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: auto;
 }

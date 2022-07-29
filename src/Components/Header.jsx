@@ -22,6 +22,10 @@ const Header = () => {
         <Link to="/applicationForm">Application Form</Link>
         <Link to="/aboutUs">About Us</Link>
         <Link to="/studentdata">Students Data</Link>
+        <Link to="/recruitmentForm">Recruitment Form</Link>
+        <Link to="/Post">Posts</Link>
+        <Link to="/Users">Users</Link>
+        <Link to="/LoginPage"> Login </Link>
       </div>
     </header>
   );
