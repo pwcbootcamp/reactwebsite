@@ -9,6 +9,7 @@ function Header() {
     document.querySelector(".active").classList.remove("active");
     e.target.classList.add("active");
   };
+
   return (
     <header>
       <div>
