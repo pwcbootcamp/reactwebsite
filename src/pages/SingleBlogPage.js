@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 const SingleBlogPage = () => {
   const { id } = useParams();
   const [singlePost, setSinglePost] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchSinglePost = async () => {
     try {
@@ -12,6 +13,7 @@ const SingleBlogPage = () => {
       );
       const data = await response.json();
       setSinglePost(data);
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -20,15 +22,24 @@ const SingleBlogPage = () => {
     fetchSinglePost();
   }, []);
   return (
-    <div className="blogContainer">
-      <h1>PwC Blog</h1>
-      <hr />
-      <h4>{singlePost.title}</h4>
-      <hr />
-      <div className="post-body">
-        <p>{singlePost.body}</p>
+    <>
+      <div className="blogContainer">
+        {isLoading ? (
+          <h3 style={{ textAlign: "center" }}>Loading ...</h3>
+        ) : (
+          <div>
+            {" "}
+            <h1>PwC Blog</h1>
+            <hr />
+            <h4>{singlePost.title}</h4>
+            <hr />
+            <div className="post-body">
+              <p>{singlePost.body}</p>
+            </div>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 };
 

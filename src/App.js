@@ -4,6 +4,7 @@ import Welcome from "./components/Welcome";
 import Profile from "./components/Profile";
 import Title, { Description } from "./components/Function";
 import Card from "./components/Card";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -19,6 +20,8 @@ import Users from "./components/Users";
 import Todos from "./components/Todos";
 import Login from "./pages/Login";
 import SingleBlogPage from "./pages/SingleBlogPage";
+import Conditionals from "./pages/Conditionals";
+import MyProfile from "./pages/MyProfile";
 
 function App() {
   const studentsData = [
@@ -85,6 +88,8 @@ function App() {
           <Route path="/users" element={<Users />}></Route>
           <Route path="/todos" element={<Todos />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/conditionals" element={<Conditionals />}></Route>
+          <Route path="/profile" element={<MyProfile />}></Route>
           <Route
             path="/single-blog-post/:id"
             element={<SingleBlogPage />}
